@@ -1,0 +1,26 @@
+inxi -F // informações detalhas do pc
+lscpu //info do pc
+lshw // informações de drivers
+cat /proc/cpuinfo //informação bem detalhadas de cada cpu
+free -h //memoria
+
+df -h //dispositivos montados
+top // processos
+du arquivos
+cat // ler arquivo no terminal
+
+tail -f //segura
+pwd // pasta atual
+ps // processos
+kill -9 // matar processo
+
+locate -i // busca arquivos
+
+grep // pesquisar dentro do arquivo txt
+
+hostname -i //endereço ip
+ifconfig
+
+echo set completion-ignore-case on | sudo tee -a /etc/inputrc ignorar case sensitive //ignorar case sensitive
+
+
