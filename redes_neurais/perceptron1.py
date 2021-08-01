@@ -2,8 +2,8 @@
 # primeiro programa do curso de redes neurais com python.
 # =============================================================================
 
-entradas = [1,7,5]
-pesos = [0.8,0.1,0]
+entradas = [5,2,1]
+pesos = [0.2,0.5,0.1]
 
 def soma(e,p):
     s=0

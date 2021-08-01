@@ -1,0 +1,46 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Aug  1 00:28:10 2021
+
+@author: pedrodsk
+"""
+import pandas as pd
+import keras
+from keras.models import Sequential
+from keras.layers import Dense, Dropout
+from tensorflow.keras.wrappers.scikit_learn import KerasClassifier
+from sklearn.model_selection import GridSearchCV
+
+
+previsores = pd.read_csv('entradas_breast.csv') # carregar csv no dataframe
+classe = pd.read_csv('saidas_breast.csv') #carregar as saidas
+
+def criarRede(optimizer2,loss2,kernel_initializer2,activation2,neurons):
+    model = Sequential()
+    model.add(Dense(units=neurons,activation=activation2,kernel_initializer=kernel_initializer2,input_dim=30))
+    model.add(Dropout(0.2))
+    model.add(Dense(units=neurons,activation=activation2,kernel_initializer=kernel_initializer2))
+    model.add(Dropout(0.2))
+    model.add(Dense(units=1, activation='sigmoid'))        
+    model.compile(optimizer=optimizer2, loss = loss2, metrics = ['binary_accuracy'])
+    return model
+
+model = KerasClassifier(build_fn=criarRede)
+
+parametros={'batch_size': [10,30],
+            'epochs': [50,100],
+            'optimizer2': ['adam','sgd'],
+            'loss2': ['binary_crossentropy','hinge'],
+            'kernel_initializer2': ['random_uniform','normal'],
+            'activation2': ['relu','tanh'],
+            'neurons': [16,8]
+                }
+grid_search = GridSearchCV(estimator= model,
+                           param_grid=parametros,
+                           scoring='accuracy',
+                           cv=5)
+
+grid_search= grid_search.fit(previsores,classe)
+melhores_parametros = grid_search.best_params_
+melhor_precisao = grid_search.best_score_
