@@ -50,5 +50,5 @@ If you wish to do it permanently, edit /etc/gdm3/custom.conf and uncomment the l
 
 #WaylandEnable=false
 ----------------------------------------
-feh --recursive --auto-zoom --geometry 800x600 // visualizar fotos da pasta toda
+feh --recursive --auto-zoom --geometry 800x600 .  // visualizar fotos da pasta toda
 
