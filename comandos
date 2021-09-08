@@ -1,49 +1,70 @@
+----------------------------------------------
 inxi -F // informações detalhas do pc
+---------------------------------------
 lscpu //info do pc
+---------------------------------------
 lshw // informações de drivers
+---------------------------------------
 cat /proc/cpuinfo //informação bem detalhadas de cada cpu
+---------------------------------------
 free -h //memoria
-
-find . -type f | wc -l // contar arquivos dentro de uma pasta
-
-
-
+---------------------------------------
 df -h //dispositivos montados
+---------------------------------------
 top // processos
+---------------------------------------
 du arquivos
+---------------------------------------
 cat // ler arquivo no terminal
-
+---------------------------------------
 tail -f //segura
+---------------------------------------
 pwd // pasta atual
+---------------------------------------
 ps // processos
+---------------------------------------
 kill -9 // matar processo
+---------------------------------------
 rm -r //apagar
-
+---------------------------------------------------
 locate -i // busca arquivos
-
+---------------------------------------------------
 grep // pesquisar dentro do arquivo txt
-
+---------------------------------------------------
 hostname -i //endereço ip
 ifconfig
-
+--------------------------------------------------
 echo set completion-ignore-case on | sudo tee -a /etc/inputrc ignorar case sensitive //ignorar case sensitive
-
+---------------------------------------------------------------
 alias ac="conda activate biopass-palmprint-recognition;cd ~/Vsoft/BioPass/biopass-palmprint-recognition/vsoft_biopass_palmprint_recognition/"
 alias de="conda deactivate"
 alias ju="jupyter lab"
 alias gh="cd ~/Vsoft/BioPass/biopass-palmprint-recognition/vsoft_biopass_palmprint_recognition/"
+-------------------------------
 alias restaurar="git ls-files -d | xargs git checkout"
+-------------------------------
+git config --global credential.helper store  // salvar credenciais
+
+----------------------------
+If you wish to do it permanently, edit /etc/gdm3/custom.conf and uncomment the line:
+
+#WaylandEnable=false
+----------------------------------------
+feh --recursive --auto-zoom --geometry 800x600 .  // visualizar fotos da pasta toda
+
+----------------------------------------
+find . -type f | wc -l // contar arquivos dentro de uma pasta
 
 find . -maxdepth 1 -type f //pasta atual, sem profundidade
 
 find . -name "*.png" -type f -delete
 
-find . -name '*.jpg' -exec mogrify -format png *.jpg\> {} \;
+find . -name '*.jpg' -exec mogrify -format png *.jpg\> {} \; //converter jpg em png
 
-find . -name '*.jpeg' | wc -l
+find . -name '*.jpeg' | wc -l //contar arquivos jpeg
 
-find . ! '(' -name '*.jpg' -o -name '*.jpeg' ')'
+find . ! '(' -name '*.jpg' -o -name '*.jpeg' ')' 
 
-find . ! '(' -name '*.png' ')' -type f
+find . ! '(' -name '*.png' ')' -type f // Exibir arquivos diferentes de png
 
-
+----------------------------------------
