@@ -61,6 +61,8 @@ find . -name "*.png" -type f -delete
 
 find . -name '*.jpg' -exec mogrify -format png *.jpg\> {} \; //converter jpg em png
 
+find . -name '*.png' -exec mogrify -colorspace Gray *.png\> {} \;
+
 find . -name '*.jpeg' | wc -l //contar arquivos jpeg
 
 find . ! '(' -name '*.jpg' -o -name '*.jpeg' ')' 
