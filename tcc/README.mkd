@@ -10,7 +10,7 @@
 3. Instale os requirements.txt com o pip.
 4. Baixe o dataset PKlot no kaggle e crie a pasta /../dataset/PKLot
 5. Reorganize as pastadas da forma
-    6. /dataset/PKLot/PUCPR/todas
-    7. /dataset/PKLot/UFPR04/todas
-    8. /dataset/PKLot/UFPR05/todas
+    * /dataset/PKLot/PUCPR/todas
+    * /dataset/PKLot/UFPR04/todas
+    * /dataset/PKLot/UFPR05/todas
 ##### "todas" representa uma pasta com todas as imagens dos estacionamentos completos agrupadas (sem divisão: sunny, cloud, rainny)   
