@@ -5,7 +5,7 @@
 ### Defesa - Pedro Ivo Aragão Guimarães / Orientador: Dr. Rafael Bezerra Correia Lima
 
 #### 
-1. Clone o repositório.
+1. Clone o repositório tcc.
 2. Crie um ambiente virtual.
 3. Instale os requirements.txt com o pip.
 4. Baixe o dataset PKlot no kaggle e crie a pasta /../dataset/PKLot
@@ -13,4 +13,4 @@
     6. /dataset/PKLot/PUCPR/todas
     7. /dataset/PKLot/UFPR04/todas
     8. /dataset/PKLot/UFPR05/todas
-##### "todas" representa uma pasta com todas as imagens dos estacionamentos completos agrupadas (sem divisão sunny, cloud, rainny)   
+##### "todas" representa uma pasta com todas as imagens dos estacionamentos completos agrupadas (sem divisão: sunny, cloud, rainny)   
