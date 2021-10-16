@@ -2,7 +2,7 @@
 
 ## Curso Engenharia Elétrica
 
-### Defesa - Pedro Ivo Aragão Guimarães / Orientador: Dr. Rafael Bezerra Correia Lima
+### Autor - Pedro Ivo Aragão Guimarães / Orientador: Dr. Rafael Bezerra Correia Lima
 
 #### 
 1. Clone o repositório tcc.
