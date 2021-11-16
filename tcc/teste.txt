@@ -1,8 +1,0 @@
-oii testando
-<<<<<<< HEAD
-
-
-louucura
-=======
-oii testando github
->>>>>>> 8a537b6ea0d2adf2699f750c3481191491b76f42
