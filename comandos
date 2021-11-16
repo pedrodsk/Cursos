@@ -36,10 +36,11 @@ ifconfig
 --------------------------------------------------
 echo set completion-ignore-case on | sudo tee -a /etc/inputrc ignorar case sensitive //ignorar case sensitive
 ---------------------------------------------------------------
-alias ac="conda activate biopass-palmprint-recognition;cd ~/Vsoft/BioPass/biopass-palmprint-recognition/vsoft_biopass_palmprint_recognition/"
+alias palmprint="cd ~/Vsoft/BioPass/biopass-palmprint-recognition/vsoft_biopass_palmprint_recognition/notebooks/; conda activate biopass-palmprint-recognition"
+alias spoofs="cd ~/Vsoft/BioPass/biopass-face-anti-spoofing/vsoft_fas_classifier; conda activate biopass-face-anti-spoofing"
 alias de="conda deactivate"
 alias ju="jupyter lab"
-alias gh="cd ~/Vsoft/BioPass/biopass-palmprint-recognition/vsoft_biopass_palmprint_recognition/"
+alias restaurar="git ls-files -d | xargs git checkout"
 -------------------------------
 alias restaurar="git ls-files -d | xargs git checkout"
 -------------------------------
