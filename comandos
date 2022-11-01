@@ -82,4 +82,9 @@ gs -dPDFA -dBATCH -dNOPAUSE -sColorConversionStrategy=UseDeviceIndependentColor 
 
 ------------------------------------------
 
+unzip varios arquivos com as pastas
+
+for f in *.zip; do unzip -d "${f%*.zip}" "$f"; done
+
+------------------------------------------
 
