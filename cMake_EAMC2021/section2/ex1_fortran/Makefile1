@@ -1,0 +1,28 @@
+### C/C++
+CC=g++
+CFLAGS=-std=c++11
+
+### Fortran
+FC=gfortran
+FFLAGS=
+
+# LINKER=g++
+# LFLAGS=-lgfortran
+
+LINKER=gfortran
+LFLAGS=-lstdc++
+
+BIN=ex1_fortran
+
+all:
+	echo "Clausula all"
+	$(CC) $(CFLAGS) -c src/main.cpp
+	$(FC) $(FFLAGS) -c src/compute.f
+	$(LINKER) $(LFLAGS) main.o compute.o -o $(BIN)
+
+# clean:
+# 	echo "Clausula clean"
+# 	rm -f *.o
+# 	rm -f *.mod
+# 	rm -f $(BIN)
+
