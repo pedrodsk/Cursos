@@ -54,5 +54,6 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-#
+# Folders
 **/.vscode
+**/.ipynb_checkpoints
