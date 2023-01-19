@@ -96,3 +96,14 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/
 python3 -m pip install tensorflow
 
 python3 -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
+
+
+-----------------------------
+Docker volume e copia
+
+COPIAR ARQUIVOS PARA DENTRO DO DOCKER (volume):
+docker run -it --mount type=bind,source=C:\opt,target=/copiar vsoft.azurecr.io/pesquisa/vsoft-basics:ubuntu-20
+
+COPIAR PASTA DO DOCKER:
+docker create --name copiar-opt vsoft.azurecr.io/pesquisa/vsoft-basics:ubuntu-20
+docker cp copiar-opt:/opt/ C:\opt
